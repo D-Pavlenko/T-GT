@@ -1,0 +1,85 @@
+.tag-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F7F7;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 24px 33px 17px 32px;
+}
+
+.tag-section span {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    line-height: 18px;
+    color: var(--text-nav-color);
+}
+
+.tag-section-btn {
+    border: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    line-height: 18px;
+    color: var(--secondary-color);
+    margin-left: 23px;
+    cursor: pointer;
+    position: relative;
+    text-shadow: none;
+    padding: 0;
+}
+
+.tag-section-btn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    max-height: 0;
+    color: #175315;
+    content: attr(data-hover);
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+}
+
+.tag-section-btn:hover::before{
+    max-height: 100%;
+}
+
+.tags-btn-contact {
+    margin-left: 234px;
+}
+
+.tags-btn-contacts {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    line-height: 18px;
+    color: var(--text-nav-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.tags-btn-contacts:first-child {
+    margin-right: 37px;
+}
+
+.tags-btn-contacts:hover {
+    color: var(--text-item-color);
+    transition: .2s;
+}
+
+@media (max-width: 1190px) {
+    .tags-btn-contact {
+        margin-left: 52px;
+    }
+}
+
+@media (max-width: 992px) {
+    .tag-section {
+        display: none;
+    }
+}

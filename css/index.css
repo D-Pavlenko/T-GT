@@ -1,0 +1,9 @@
+@import "./normalize.css";
+@import "./variables.css";
+@import "./general.css";
+@import "./header.css"; 
+@import "./firstblock.css"; 
+@import "./tag-section.css"; 
+@import "./content.css"; 
+@import "./signup.css"; 
+@import "./footer.css";
